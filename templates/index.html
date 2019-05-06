@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+		<center><i><h1>Customer Review Form</h1></i></center>
+        <form action="" method="post">
+            {{ form.csrf }}
+			<center>
+		        <div class="input text">
+					<span><b><i> Fields marked with * are mandatory </i></b></span><br/><br/>
+					{{ form.fname.label }} <br> {{ form.fname }} <br/><br/>
+					{{ form.lname.label }} <br> {{ form.lname }} <br/><br/>
+					{{ form.org.label }} <br> {{ form.org }} <br/><br/>
+		      {{ form.email.label }} <br> {{ form.email }} <br/><br/>
+					{{ form.phone.label }} <br> {{ form.phone }} <br/><br/>
+					{{ form.product.label }} <br> {{ form.product }} <br/><br/>
+					{{ form.review.label }} <br> {{ form.review }} <br/><br/>
+		        </div>
+
+		        <div class="input submit">
+		            <input type="submit" value="Submit" />
+		        </div>
+		    </form>
+
+		</center>
+{% endblock %}

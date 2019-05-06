@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+		<center><i><h1>Customer Review Form</h1></i></center>
+    <center>
+      <table style="margin-top:50px;width:30%;padding:10px;border:1px solid black">
+        <tr style="margin-top:50px;width:30%;padding:10px;border:1px solid black">
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">Firstname</th>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">{{ fname }}</th>
+        </tr>
+        <tr style="margin-top:50px;width:30%;padding:10px;border:1px solid black">
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">Lastname</th>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">{{ lname }}</th>
+        </tr>
+        <tr>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">Organisation</th>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">{{ org }}</th>
+        </tr>
+        <tr style="margin-top:50px;width:30%;padding:10px;border:1px solid black">
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">Email</th>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">{{ email }}</th>
+        </tr>
+        <tr style="margin-top:50px;width:30%;padding:10px;border:1px solid black">
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">Phone</th>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">{{ phone }}</th>
+        </tr>
+        <tr style="margin-top:50px;width:30%;padding:10px;border:1px solid black">
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">Product</th>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">{{ product }}</th>
+        </tr>
+        <tr style="margin-top:50px;width:30%;padding:10px;border:1px solid black">
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">Review</th>
+          <th style="margin-top:50px;width:30%;padding:10px;border:1px solid black">{{ review }}</th>
+        </tr>
+      </table>
+      <a href="/review-submitted"><button class=”button”>Confirm</button></a>
+    </center>
+
+{% endblock %}

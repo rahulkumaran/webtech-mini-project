@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <center><h1>Customer Reviews</h1></center>
+  <br/><br/><br/>
+
+  {% for details in review_list %}
+  <center>
+  <div style="width:50%;height: 30%;padding: 25px;border: 2px solid black; margin-bottom:50px;">
+    <h4>Name : {{ details[0]}} {{ details[1] }}</h4><br>
+    <h4>Product : {{ details [5] }}</h4><br>
+    <h4>Review : {{ details[-1] }}</h4><br>
+  </div>
+  </center>
+  {% endfor %}
+
+{% endblock %}
